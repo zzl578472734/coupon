@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link href="css/home/index.css" rel="stylesheet">
+</head>
+<body>
+  <div class='wrap'>
+      <header></header>
+      <!-- 搜索 -->
+      <div class="search">
+          <div class="searhInput"><input type="text" id="search_box" placeholder="搜索"/><a></a></div>
+          <div class="searchKeyWords">
+              <ul id="hotword">
+                <li v-for ='item in items'  v-text='item'></li>
+              </ul>
+          </div>
+      </div>
+      <!-- 商品列表 -->
+      <div class="storelist">      
+        <!-- <div class="weui-pull-to-refresh__layer">
+                <div class='weui-pull-to-refresh__arrow'></div>
+                <div class='weui-pull-to-refresh__preloader'></div>
+                <div class="down">下拉刷新</div>
+                <div class="up">释放刷新</div>
+                <div class="refresh">正在刷新</div>
+        </div>        -->
+		<div class=" ball-clip-rotate loadAnimate displayNone">
+			<div></div>
+		</div>
+          <ul id='showStoreList'></ul>                
+      </div> 
+    <!-- 商品详细信息 -->
+    <div class='swiperWrap displayNone'>
+                <div class='returnList'><a>返回列表</a></div>
+             
+               <div class='detailStore swiper-container'>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <!--<div class="swiper-slide"><img class='swiper_img' src="{{ asset('images/home/detailStore/swiper-1.jpg') }}" /></div>-->
+                        <!--<div class="swiper-slide"><img class='swiper_img' src="{{ asset('images/home/detailStore/swiper-2.jpg') }}" /></div>-->
+                        <!--<div class="swiper-slide"><img class='swiper_img' src="{{ asset('images/home/detailStore/swiper-3.jpg') }}" /></div>       -->
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>   
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>     
+               <div class='getYHQ'><a>点击领券</a></div>        
+    </div>    
+ 
+    <div>
+        <div class="weui-loadmore displayNone">
+            <i class="weui-loading"></i>
+            <span class="weui-loadmore__tips">正在加载</span>
+        </div>
+        <div class='backToTop displayNone'>
+           <a>返回顶部</a>
+        </div>
+    </div>
+</div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/home/rem.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/vue-resource.js"></script>
+  <script src="js/fastclick.js"></script>
+  <script src="js/jquery-weui.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/home/index.js"></script>
+</body>
+</html>
