@@ -1,0 +1,18 @@
+#allImgGroup{
+    padding: 8px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 15px
+}
+.rightTool{
+    border-bottom: 1px dashed #03A9F4;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.displayNone{
+    display: none;
+}
+#uploadInput{
+    display: inline-block;
+}
